@@ -1,0 +1,14 @@
+{
+  "name": "react-notification-npm",
+  "version": "0.0.1",
+  "description": "react notification library",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Mobin Afshari",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^19.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  }
+}
