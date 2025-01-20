@@ -1,6 +1,6 @@
 {
   "name": "react-notification-npm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "react notification library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -11,6 +11,7 @@
     "README.md"
   ],
   "exports": {
+    "./package.json": "./package.json",
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
@@ -39,8 +40,10 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "colord": "^2.9.3",
-    "react-icons": "^5.4.0",
     "rollup": "^4.29.1"
+  },
+  "peerDependencies": {
+    "colord": "^2.9.3",
+    "react-icons": "^4.0.0 || ^5.0.0"
   }
 }
