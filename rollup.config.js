@@ -30,7 +30,7 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       sass(),
     ],
-    external: ["react", "react-dom"],
+    external: ["react", "react-dom" , "colord" , "react-icons"],
   },
   {
     input: "src/index.ts",

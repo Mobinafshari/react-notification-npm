@@ -1,10 +1,14 @@
 {
   "name": "react-notification-npm",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "react notification library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "custom",
+    "notifications"
+  ],
   "files": [
     "dist",
     "package.json",
@@ -31,8 +35,10 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
+    "colord": "^2.9.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-sass": "^1.15.2",
