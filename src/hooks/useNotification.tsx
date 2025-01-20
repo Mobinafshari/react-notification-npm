@@ -24,7 +24,7 @@ const colors = {
 };
 
 const icons = {
-  success: <AiOutlineCheckCircle />,
+  success:<AiOutlineCheckCircle />,
   info: <AiOutlineInfoCircle />,
   warn: <AiOutlineWarning />,
   error: <AiOutlineCloseCircle />,

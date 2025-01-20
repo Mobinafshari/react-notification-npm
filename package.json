@@ -1,15 +1,23 @@
 {
   "name": "react-notification-npm",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "react notification library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist" ,
-    "package.json" ,
+    "dist",
+    "package.json",
     "README.md"
   ],
+  "exports": {
+    "dist": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.mjs"
+    }
+  },
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
   },
