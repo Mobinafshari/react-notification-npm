@@ -1,9 +1,13 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
-import { ReactNode } from 'react';
 
-type Props = {
-    children: ReactNode;
+type ToastProps = {
+    id: number;
+    text: string;
+    type?: "warn" | "error" | "success" | "info";
 };
-declare function Button({ children }: Props): react_jsx_runtime.JSX.Element;
+declare const useNotification: (duration?: number) => {
+    trigger: (text: string, type?: ToastProps["type"]) => void;
+    Toasts: react_jsx_runtime.JSX.Element | null;
+};
 
-export { Button as default };
+export { useNotification as default };
