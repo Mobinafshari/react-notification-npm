@@ -5,7 +5,6 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import terser from "@rollup/plugin-terser";
 import postcss from "rollup-plugin-postcss";
-import styles from "rollup-plugin-styles";
 
 const packageJson = require("./package.json");
 
@@ -30,16 +29,12 @@ export default [
       commonjs(),
       terser(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      styles({
-        modules : true,
-        mode : "extract"
-      })
-      // postcss({
-      //   modules: true, 
-      //   use: ["sass"],
-      //   extract: true, 
-      //   minimize: true, 
-      // }),
+      postcss({
+        modules: true,
+        use: ["sass"],
+        extract: false,
+        minimize: true,
+      }),
     ],
     external: ["react", "react-dom", "colord", "react-icons"],
   },
