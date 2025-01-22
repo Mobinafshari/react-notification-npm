@@ -1,6 +1,6 @@
 {
   "name": "react-notification-npm",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "react notification library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

@@ -1,5 +1,6 @@
 import useNotification from "../hooks/useNotification";
 
+
 function Notification() {
   const { Toasts, trigger } = useNotification();
 
