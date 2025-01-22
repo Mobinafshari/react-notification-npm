@@ -1,6 +1,6 @@
 {
   "name": "react-notification-npm",
-  "version": "0.0.9",
+  "version": "0.0.12",
   "description": "react notification library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,7 +12,8 @@
   "files": [
     "dist",
     "package.json",
-    "README.md"
+    "README.md",
+    "dist/styles.css"
   ],
   "exports": {
     "./package.json": "./package.json",
@@ -21,7 +22,9 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js",
       "default": "./dist/index.mjs"
-    }
+    },
+    "./dist/index.css": "./dist/index.css"
+
   },
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
@@ -36,6 +39,7 @@
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "colord": "^2.9.3",
+    "postcss": "^8.5.1",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-icons": "^5.4.0",

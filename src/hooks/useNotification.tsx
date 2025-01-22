@@ -1,5 +1,5 @@
-import { useCallback, useMemo, useState } from "react";
 import styles from "./notification.module.scss";
+import { useCallback, useMemo, useState } from "react";
 import { colord } from "colord";
 import {
   AiOutlineCheckCircle,
