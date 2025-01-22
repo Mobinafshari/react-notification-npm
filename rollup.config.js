@@ -4,7 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import terser from "@rollup/plugin-terser";
-import sass from "rollup-plugin-sass";
+import postcss from "rollup-plugin-postcss";
 const packageJson = require("./package.json");
 
 export default [
@@ -28,9 +28,14 @@ export default [
       commonjs(),
       terser(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      sass(),
+      postcss({
+        modules: true, 
+        use: ["sass"], 
+        extract: true, 
+        minimize: true, 
+      }),
     ],
-    external: ["react", "react-dom" , "colord" , "react-icons"],
+    external: ["react", "react-dom", "colord", "react-icons"],
   },
   {
     input: "src/index.ts",

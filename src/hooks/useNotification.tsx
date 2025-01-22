@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import "./notification.scss";
+import styles from "./notification.module.scss";
 import { colord } from "colord";
 import {
   AiOutlineCheckCircle,
@@ -15,7 +15,6 @@ type ToastProps = {
   type?: "warn" | "error" | "success" | "info";
 };
 
-
 const colors = {
   warn: "#FEEC37",
   success: "#C2FFC7",
@@ -24,7 +23,7 @@ const colors = {
 };
 
 const icons = {
-  success:<AiOutlineCheckCircle />,
+  success: <AiOutlineCheckCircle />,
   info: <AiOutlineInfoCircle />,
   warn: <AiOutlineWarning />,
   error: <AiOutlineCloseCircle />,
@@ -54,15 +53,15 @@ const useNotification = (duration: number = 3000) => {
           const notificationColor = colors[type];
           return (
             <section
-            role="alert"
+              role="alert"
               key={id}
-              className="notification notification-open"
+              className={`${styles["notification"]} ${styles["notification-open"]}`}
               style={{
                 top: 20 + index * 50,
                 backgroundColor: notificationColor,
                 borderColor: colord(notificationColor).darken(0.1).toHex(),
               }}>
-              <div className="notification-text">
+              <div className={styles["notification-text"]}>
                 {icons[type]}
                 {text}
               </div>
