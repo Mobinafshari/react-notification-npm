@@ -1,6 +1,6 @@
 {
   "name": "react-notification-npm",
-  "version": "0.0.13",
+  "version": "0.0.15",
   "description": "react notification library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -37,8 +37,8 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
-    "@types/react": "^19.0.2",
-    "@types/react-dom": "^19.0.2",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^2.2.0",
     "colord": "^2.9.3",
     "postcss": "^8.5.1",
@@ -49,6 +49,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.15.2",
+    "rollup-plugin-styles": "^4.0.0",
     "tslib": "^2.8.1",
     "typescript": "^5.7.2",
     "vite": "^4.5.9"
