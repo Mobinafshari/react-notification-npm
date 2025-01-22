@@ -12,9 +12,8 @@
   "files": [
     "dist",
     "package.json",
-    "README.md",
-    "dist/styles.css"
-  ],
+    "README.md"
+    ],
   "exports": {
     "./package.json": "./package.json",
     ".": {
