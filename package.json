@@ -22,12 +22,13 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js",
       "default": "./dist/index.mjs"
-    },
-    "./dist/index.css": "./dist/index.css"
-
+    }
   },
   "scripts": {
-    "rollup": "rollup -c --bundleConfigAsCjs"
+    "rollup": "rollup -c --bundleConfigAsCjs",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "author": "Mobin Afshari",
   "license": "ISC",
@@ -38,6 +39,7 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^2.2.0",
     "colord": "^2.9.3",
     "postcss": "^8.5.1",
     "react": "^18.3.0",
@@ -48,7 +50,8 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.15.2",
     "tslib": "^2.8.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vite": "^4.5.9"
   },
   "dependencies": {
     "rollup": "^4.29.1"

@@ -29,10 +29,10 @@ export default [
       terser(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        modules: true, // Enable CSS modules
-        use: ["sass"], // Use the sass preprocessor
-        extract: true, // Extract CSS to a separate file
-        minimize: true, // Minimize the CSS output
+        modules: true, 
+        use: ["sass"],
+        extract: true, 
+        minimize: true, 
       }),
     ],
     external: ["react", "react-dom", "colord", "react-icons"],

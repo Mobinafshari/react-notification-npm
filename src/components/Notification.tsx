@@ -1,5 +1,14 @@
+import useNotification from "../hooks/useNotification";
+
 function Notification() {
-  return <section className="notification">hello</section>;
+  const { Toasts, trigger } = useNotification();
+
+  return (
+    <>
+      {Toasts}
+      <button onClick={() => trigger("hello", "error")}>Show toast</button>
+    </>
+  );
 }
 
 export default Notification;
