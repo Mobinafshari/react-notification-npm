@@ -1,4 +1,5 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
+import { screen } from "@testing-library/dom";
 import Notification from "../src/components/Notification";
 import userEvent from "@testing-library/user-event";
 
