@@ -1,3 +1,1 @@
-# react-notification-npm
-This will be my first npm library.
-Updated
+<h1>React Notification library</h1>
